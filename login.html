@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/3679f04d4c.js" crossorigin="anonymous"></script>
+    <style>
+        nav{
+            justify-content: space-between;
+            display: flex;
+        }
+        header a{
+            text-decoration: none;
+            color: black;
+            margin: 10px;
+            background-color: rgb(253, 123, 2);
+            padding: 5px;
+            border-radius: 15px;
+        }
+        .login{
+            justify-content: center;
+            display: flex;
+            margin-top: 50px;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        .login-form input{
+            margin: 10px;
+            padding: 5px;
+        }
+        .login-form input[type=submit]{
+            background-color: gold;
+            border: 0;
+            border: 10px;
+            color: rgb(83, 94, 104);
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 700;
+        }
+        .login-form h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span>
+                <a href=""><i class="fa-solid fa-house"></i>HOME</a>
+                <a href="">CART</a>
+                <a href="">CONTACT</a>
+                <a href="">SETTINGS</a>
+            </span>
+            <span>
+                <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+            </span>
+        </nav>
+    </header>
+    <section class="login">
+        <form class="login-form">
+            <h1>LOGIN FORM</h1>
+            <input type="email" placeholder="Enter Your Email" required>
+            <input type="password" placeholder="Enter Your Password" required>
+            <input type="submit">
+        </form>
+    </section>
+</body>
+</html>

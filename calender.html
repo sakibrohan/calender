@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3679f04d4c.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto Mono', monospace;
+            font-family: 'Roboto Slab', serif;
+        }
+        .container{
+            width: 1150px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            margin: 50px;
+        }
+        .div1{
+            display: flex;
+            justify-content: center;
+        }
+        .main{
+            width: 700px;
+            height: 500px;
+            background-color: #242329;
+            display: grid;
+            grid-template-columns: repeat(7, 90px);
+            grid-template-rows: repeat(6,70px);
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .item{
+            color: white;
+            font-size: 20px;
+            padding: 50px;
+            
+        }
+        .aside{
+            width: 450px;
+            height: 500px;
+            padding-bottom: 40px;
+            transform: translate(0px, -20px);
+            background-color: #E76541;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .aside-content{
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 30px;
+            padding-top: 20px;
+        }
+        #date{
+            font-size: 70px;
+            color: white;
+        }
+        #day{
+            font-size: 40px;
+            color: black;
+        }
+        #month{
+            font-size: 30px;
+            color: black;
+        }
+        .same{
+            margin: 0;
+        }
+        #icon{
+            font-size: 30px;
+            padding-top: 100px;
+            color: white;
+        }
+        #days{
+            color: #E76541
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="container">
+            <div class="div2">
+                <div class="main">
+                    <div id="days" class="item">M</div>
+                    <div id="days" class="item">T</div>
+                    <div id="days" class="item">W</div>
+                    <div id="days" class="item">T</div>
+                    <div id="days" class="item">F</div>
+                    <div id="days" class="item">S</div>
+                    <div id="days" class="item">S</div>
+                    <div class="item"></div>
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                    <div class="item">5</div>
+                    <div class="item">6</div>
+                    <div class="item">7</div>
+                    <div class="item">8</div>
+                    <div class="item">9</div>
+                    <div class="item">10</div>
+                    <div class="item">11</div>
+                    <div class="item">12</div>
+                    <div class="item">13</div>
+                    <div class="item">14</div>
+                    <div class="item">15</div>
+                    <div class="item">16</div>
+                    <div class="item">17</div>
+                    <div class="item">18</div>
+                    <div class="item">19</div>
+                    <div class="item">20</div>
+                    <div class="item">21</div>
+                    <div class="item">22</div>
+                    <div class="item">23</div>
+                    <div class="item">24</div>
+                    <div class="item">25</div>
+                    <div class="item">26</div>
+                    <div class="item">27</div>
+                    <div class="item">28</div>
+                    <div class="item">29</div>
+                    <div class="item">30</div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+            <div class="aside">
+                <h1 id="date" class="aside-content">27</h1>
+                <h2 id="day" class="aside-content same">TUESDAY</h2>
+                <h3 id="month" class="aside-content same">JUNE/2023</h3>
+                <i id="icon" class="fa-solid fa-pen aside-content"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
